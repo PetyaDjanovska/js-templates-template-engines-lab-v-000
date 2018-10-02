@@ -23,13 +23,7 @@
     let commentText = document.getElementById('commentText').value
     let commenter = document.getElementById('commenter').value
 
-
-
     let commentSection = document.getElementById('comments');
 
-    let templateHTML = templateFn({'commentText': commentText, 'commenter': commenter});
-
-    console.log(templateHTML)
-
-    commentDiv.innerHTML += templateHTML;
+    commentSection.innerHTML += commentTemplate({'commentText': commentText, 'commenter': commenter});
 }
