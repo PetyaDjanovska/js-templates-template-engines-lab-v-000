@@ -24,7 +24,7 @@
 
     let commentTemplate = document.getElementById('comment-template').innerHTML;
 
-    const templateFn = _.template(commentTemplate);
+    let templateFn = _.template(commentTemplate);
 
     const commentDiv = document.getElementById('comments');
 
