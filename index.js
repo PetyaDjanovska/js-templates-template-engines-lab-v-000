@@ -11,7 +11,7 @@
     document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 
     let blogSection = postTemplate({ 'title': title, 'content': content, 'author': author });
-    var commentsSection = commentsTemplate();
+    let commentsSection = commentsTemplate();
     var postElement = document.getElementById("post");
 
   }
