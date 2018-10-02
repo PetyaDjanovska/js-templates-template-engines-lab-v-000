@@ -7,6 +7,3 @@ let pageTemplate =
   function createPost() {
 
   }
-
-  let postTemplate =
-    '<header class='title'></header><footer class='author'></footer>';
