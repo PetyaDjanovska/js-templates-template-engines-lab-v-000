@@ -16,5 +16,21 @@
 
     postElement.innerHTML = blogSection;
     postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
-
   }
+
+  function postComment() {
+    let commentText = document.getElementById('commentText').value
+    const commenterName = document.getElementById('commenterName').value
+
+    const commentTemplate = document.getElementById('comment-template').innerHTML;
+
+    const templateFn = _.template(commentTemplate);
+
+    const commentDiv = document.getElementById('comments');
+
+    const templateHTML = templateFn({'commentText': commentText, 'commenterName': commenterName});
+
+    console.log(templateHTML)
+
+    commentDiv.innerHTML += templateHTML;
+}
