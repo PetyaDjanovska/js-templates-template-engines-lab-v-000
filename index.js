@@ -20,7 +20,7 @@
 
   function postComment() {
     let commentText = document.getElementById('commentText').value
-    let commenterName = document.getElementById('commenterName').value
+    let commenterName = document.getElementById('commenter').value
 
     const commentTemplate = document.getElementById('comment-template').innerHTML;
 
