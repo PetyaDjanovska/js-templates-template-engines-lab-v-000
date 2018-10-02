@@ -28,7 +28,7 @@
 
     let commentDiv = document.getElementById('comments');
 
-    const templateHTML = templateFn({'commentText': commentText, 'commenterName': commenterName});
+    let templateHTML = templateFn({'commentText': commentText, 'commenterName': commenterName});
 
     console.log(templateHTML)
 
