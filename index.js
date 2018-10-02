@@ -12,6 +12,6 @@
 
     let blogSection = postTemplate({ 'title': title, 'content': content, 'author': author });
     let commentsSection = commentsTemplate();
-    var postElement = document.getElementById("post");
+    let postElement = document.getElementById("post");
 
   }
