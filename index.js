@@ -25,9 +25,7 @@
 
 
 
-    let templateFn = _.template(commentTemplate);
-
-    let commentDiv = document.getElementById('comments');
+    let commentSection = document.getElementById('comments');
 
     let templateHTML = templateFn({'commentText': commentText, 'commenter': commenter});
 
