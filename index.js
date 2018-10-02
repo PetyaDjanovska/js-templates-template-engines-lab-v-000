@@ -22,7 +22,7 @@
     let commentText = document.getElementById('commentText').value
     let commenterName = document.getElementById('commenter').value
 
-    const commentTemplate = document.getElementById('comment-template').innerHTML;
+    let commentTemplate = document.getElementById('comment-template').innerHTML;
 
     const templateFn = _.template(commentTemplate);
 
