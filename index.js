@@ -9,4 +9,9 @@
     let author = document.getElementById('postAuthor').value;
 
     document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
+
+    let blogSection = postTemplate({ 'postTitle': postTitle, 'postContent': post, 'postAuthor': postAuthor });
+    var commentsSection = commentsTemplate();
+    var postElement = document.getElementById("post");
+
   }
