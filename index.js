@@ -19,10 +19,11 @@
   }
 
   function postComment() {
+    let commentTemplate = _.template(document.getElementById('comment-template').innerHTML);
     let commentText = document.getElementById('commentText').value
     let commenter = document.getElementById('commenter').value
 
-    let commentTemplate = document.getElementById('comment-template').innerHTML;
+
 
     let templateFn = _.template(commentTemplate);
 
