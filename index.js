@@ -19,11 +19,11 @@
   }
 
   function postComment() {
-    let commentTemplate = _.template(document.getElementById('comment-template').innerHTML); //create + execute template function
+    let commentTemplate = _.template(document.getElementById('comment-template').innerHTML); //create template function, get the template HTML
     let commentText = document.getElementById('commentText').value
     let commenter = document.getElementById('commenter').value
 
     let commentSection = document.getElementById('comments');
 
-    commentSection.innerHTML += commentTemplate({'commentText': commentText, 'commenter': commenter});
+    commentSection.innerHTML += commentTemplate({'commentText': commentText, 'commenter': commenter}); // execute the template fn with JSONobject and append to the HTML
 }
