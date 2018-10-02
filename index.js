@@ -10,7 +10,7 @@
 
     document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 
-    let blogSection = postTemplate({ 'postTitle': postTitle, 'postContent': post, 'postAuthor': postAuthor });
+    let blogSection = postTemplate({ 'title': title, 'content': content, 'author': author });
     var commentsSection = commentsTemplate();
     var postElement = document.getElementById("post");
 
